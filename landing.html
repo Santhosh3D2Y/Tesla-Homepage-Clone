@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+
+    header{
+        margin:0%;
+        height: 70px;
+    
+        background-color: white;
+    }
+    .logo{
+        width: 155px;
+        height: 80px;
+        position: relative;
+        left: 20px;
+        top: -5px;
+        cursor: pointer;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .ulm,.lim{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        position: relative;
+        top: -30px;
+
+    }
+
+    #headb{
+        width: 75px;
+        height: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+    }
+    #headb:hover{
+        background-color: lightgray;
+        position: relative;
+        top: -1px;
+        transition: 0.5s ease-in-out;
+        box-shadow: 0 10px 15px black;
+        cursor: pointer;
+    }
+    .ull,.lil{
+        display: flex;
+        justify-content:end;
+        margin-right: 5px;
+        position: relative;
+        top: -45px;
+        margin-right: 10px;
+        gap: 2px;
+    }
+    #headl{
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+    }
+    #headl:hover{
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    .cars{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .slider{
+          width: 100vw;
+          height: 580px;
+          margin: auto;
+          overflow: hidden;
+    }
+    .slides{
+        display: flex;
+        animation-name: slide;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+        animation-timing-function:ease-in-out ;
+    }
+    @keyframes slide{
+
+     0%,20%{
+        transform: translateX(0);
+    }
+    25%,45%{
+        transform: translateX(-100%);
+    }
+    50%,70%{
+        transform: translateX(-200%);
+    }
+    75%,95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+    }
+   </style> 
+</head>
+<body>
+    <header>
+        <div class="logoclass">
+            <img src="teslalogo.png" class="logo" alt="logo">
+            <ul class="ulm">
+                <li class="lim"><a href="vehicle-tab.html" target="_blank"><button id="headb">Vehicles</button></a></li>
+                <li class="lim"><a href="energy-tab.html" target="_blank"><button id="headb">Energy</button></a></li>
+                <li class="lim"><a href="charging.html" target="_blank"><button id="headb">Charging</button></a></li>
+                <li class="lim"><a href="discover.html" target="_blank"><button id="headb">Discover</button></a></li>
+                <li class="lim"><a href="shop.html" target="_blank"><button id="headb">Shop</button></a></li>
+            </ul>
+            <ul class="ull">
+                <li class="lil"><button id="headl"><i class="fa-regular fa-circle-question"></i></button></li>
+                <li class="lil"><button id="headl"><i class="fa-solid fa-globe"></i></button></li>
+                <li class="lil"><button id="headl"><i class="fa-regular fa-circle-user"></i></button></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slides">
+            <div class="slide">
+                <img src="modelY.jpg" class="cars">
+                <div class="text">
+                     <h1>MODEL Y</h1>
+                </div>
+            
+            </div>
+            <div class="slide">
+                <img src="roadster.jpg" class="cars">
+            </div>
+            <div class="slide">
+                <img src="1380117.jpg" class="cars">
+            </div>
+            <div class="slide">
+                <img src="cybertruck.jpg" class="cars">
+            </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
