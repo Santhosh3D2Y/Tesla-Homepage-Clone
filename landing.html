@@ -77,11 +77,17 @@
         height: 100vh;
         object-fit: cover;
     }
+    .text{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
     .slider{
           width: 100vw;
           height: 580px;
           margin: auto;
           overflow: hidden;
+          position: relative;
     }
     .slides{
         display: flex;
@@ -109,6 +115,8 @@
     }
 
     }
+
+    
    </style> 
 </head>
 <body>
@@ -122,11 +130,7 @@
                 <li class="lim"><a href="discover.html" target="_blank"><button id="headb">Discover</button></a></li>
                 <li class="lim"><a href="shop.html" target="_blank"><button id="headb">Shop</button></a></li>
             </ul>
-            <ul class="ull">
-                <li class="lil"><button id="headl"><i class="fa-regular fa-circle-question"></i></button></li>
-                <li class="lil"><button id="headl"><i class="fa-solid fa-globe"></i></button></li>
-                <li class="lil"><button id="headl"><i class="fa-regular fa-circle-user"></i></button></li>
-            </ul>
+           
         </div>
 
     </header>
@@ -135,10 +139,7 @@
             <div class="slides">
             <div class="slide">
                 <img src="modelY.jpg" class="cars">
-                <div class="text">
-                     <h1>MODEL Y</h1>
-                </div>
-            
+                <div class="text">Heading</div>
             </div>
             <div class="slide">
                 <img src="roadster.jpg" class="cars">
