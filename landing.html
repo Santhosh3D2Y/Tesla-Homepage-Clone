@@ -6,14 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <style>
-
     header{
         margin:0%;
         height: 70px;
     
         background-color: white;
     }
-
+    
     .logo{
         width: 155px;
         height: 80px;
@@ -233,20 +232,20 @@
     #xp{
         position: relative;
         left: 45px;
-        top: 70px;
+        top: 80px;
         font-weight: lighter;
     }
     #percent{
         position: relative;
-        left: 250px;
-        font-size: 30px;
-        top: -30px;
-        text-shadow: 25px 0px 12px black;
+        left:50px;
+        font-size:30px ;
+        top: 100px;
+        text-shadow: 25px 0px 10px black;
     }
     #percentp{
         position: relative;
-        left: 250px;
-        top: -36px;
+        left: 50px;
+        top: 100px;
         font-weight: lighter;
     }
     #demo{
@@ -296,8 +295,176 @@
         position: relative;
         top: -350px;
     }
-    .slidecontainer{
-        background-color: aquamarine;
+    .marquee{
+        position: relative;
+        top: 25px;
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0px;
+        background-color: #111111;
+        color: white;
+        border: 3px solid ;
+        margin-top: 25px;
+    }
+    .marqueecontent {
+        display: flex;
+        gap: 150px;
+        letter-spacing: 1px;
+        font-family: " -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+         animation: m1 10s linear infinite;
+    }
+    @keyframes m1 {
+        0%{
+            transform: translateX(-150%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    .marqueeO{
+        position: relative;
+        top: 50px;
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0px;
+        background-color: whitesmoke;
+        border: 5px solid ;
+        margin-top: 25px;
+    }
+    .marqueecontentO{
+        display: flex;
+        gap: 200px;
+        letter-spacing: 5px;
+        font-family:-apple-system;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        animation: m1O 10s linear infinite;
+    }
+    @keyframes m1O {
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-150%);
+        }
+    }
+    .f2{
+        width: 900px;
+        height: 300px;
+        background-color: whitesmoke;
+        margin: 60px;
+        border-radius: 10px;
+        padding: 10 px;
+       
+        
+    }
+    .f2:hover{
+        box-shadow: 15px 15px 25px black;
+        transition: 0.5s ease-in-out;
+    }
+    .f2c{
+        display: flex;
+        
+    }
+    .ch{
+        position: relative;
+        top: 50px;
+        left: 50px;
+        
+    }
+    .cp{
+        position: relative;
+        top: 75px;
+        left: 50px;
+        font-weight: lighter;
+    }
+    #lm{
+    position: relative;
+    top: -250px;
+    left: -250px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    }
+    #lm:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }
+    #new{
+    position: relative;
+    top: -115px;
+    left: 8px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    }
+    #new:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }
+    #preo{
+    position: relative;
+    top: -115px;
+    left: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    }
+    #preo:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }
+    #cardimg1{
+        width: 300px;
+        top: -75px;
+        height: 390px;
+        position: relative;
+        left: 250px;
+    }
+    #cardimg2{
+        width: 200px;
+        height: 225px;
+        position: relative;
+        left: 325px;
+        top: -55px;
+        border-radius: 10px;
+    }
+    footer{
+        background-color:black;
+        position: relative;
+        top: 10;
+        height: 25vh;
+        
+    }
+    #fp{
+       color: lightgray;
+       display: flex;
+       justify-content: center;
+       position:relative;
+       top: 25px;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #fl{
+        list-style-type: none;
+        display: flex;
+        gap: 25px;
+        position: relative;
+        justify-content: center;
+        top: 30px;
+    }
+    #fa{
+        text-decoration: none;
+        color: white;
+        display: flex;
     }
    </style> 
 </head>
@@ -349,20 +516,43 @@
         </div>
         </section>
         <section id="second">
-            <div class="marqslidecontainer">
-                <div class="marqsliders">
-                    <div class="mslide">• MODEL Y</div>
-                    <div class="mslide">• ROADSTER </div>
-                    <div class="mslide">• CYBERCAB</div>
-                    <div class="mslide">• CYBERTRUCK</div>
+        <div class="marquee">
+            <div class="marqueecontent">
+                <h2>Model_Y</h2>
+                <h2>Roadster</h2>
+                <h2>Cybercab</h2>
+                <h2>Cybertruck</h2>
 
-                    <div class="mslide">• MODEL Y</div>
-                    <div class="mslide">• ROADSTER </div>
-                    <div class="mslide">• CYBERCAB</div>
-                    <div class="mslide">• CYBERTRUCK</div>
-                </div>
-                
+                <h2>Model_Y</h2>
+                <h2>Roadster</h2>
+                <h2>Cybercab</h2>
+                <h2>Cybertruck</h2>
+
+                <h2>Model_Y</h2>
+                <h2>Roadster</h2>
+                <h2>Cybercab</h2>
+                <h2>Cybertruck</h2>
             </div>
+        </div>
+         <div class="marqueeO">
+            <div class="marqueecontentO">
+                <h2>AUTOPILOT</h2>
+                <h2>SELF_DRIVING</h2>
+                <h2>SUPERCHARGING</h2>
+                <h2>AI</h2>
+
+                <h2>AUTOPILOT</h2>
+                <h2>SELF_DRIVING</h2>
+                <h2>SUPERCHARGING</h2>
+                <h2>AI</h2>
+
+                <h2>AUTOPILOT</h2>
+                <h2>SELF_DRIVING</h2>
+                <h2>SUERCHARGING</h2>
+                <h2>AI</h2>
+            </div>
+        </div>
+
 
         </section>
         <section id="third">
@@ -382,11 +572,35 @@
                 </div>
             </div>
         </section>
-
-
+        <section id="fourth">
+            <div class="f2c">
+            <div class="f2">
+              <h1 class="ch">Current Offers</h1>
+              <h3 class="cp">explore limited time offer on Tesla <br>Vehicle's</h3>
+              <img id="cardimg1" src="teslaofferimg.avif" alt="teslaoffer">
+              <button id="lm">Learn More</button>
+            </div>
+            <div class="f2">
+              <h1 class="ch">Inventory</h1>
+              <h3 class="cp">Find nearby vehicles available for<br>immediate delivery</h3>
+              <img id="cardimg2" src="teslainventimg.avif" alt="teslainvent">
+             <div class="2btn"> <button id="new">New</button>
+              <button id="preo">Pre-Owned</button></div>
+            </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+          <p id="fp"> Price reflects monthly subscription, subject to terms and conditions. Price and feature availability subject to change.</p>
+          <br>
+          <ul id="fl">
+           <li> <a href="#" id="fa">Tesla © 2026 clone by<br> CURSED INTROVERT</a></li>
+           <li> <a href="#" id="fa">Privacy & Legal</a></li>
+           <li> <a href="#" id="fa">Contact</a></li>
+           <li> <a href="#" id="fa">News</a></li>
+           <li> <a href="#" id="fa">Get Updates</a></li>
+           <li> <a href="#" id="fa">Location</a></li>
+          </ul>
     </footer>
     
 </body>
