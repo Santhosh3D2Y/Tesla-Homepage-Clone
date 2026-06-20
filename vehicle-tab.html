@@ -4,18 +4,603 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            font-family: monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bolder;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    header{
+        margin:0%;
+        height: 70px;
+        background-color: white;
+    }
+    
+    .logo{
+        width: 155px;
+        height: 80px;
+        position: relative;
+        left: 20px;
+        top: -5px;
+        cursor: pointer;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .ulm,.lim{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        position: relative;
+        top: -30px;
+
+    }
+
+    #headb{
+        width: 75px;
+        height: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+
+    }
+    #headb:hover{
+        background-color: lightgray;
+        position: relative;
+        top: -1px;
+        transition: 0.5s ease-in-out;
+        box-shadow: 0 10px 15px black;
+        cursor: pointer;
+
+    }
+    .ull,.lil{
+        display: flex;
+        justify-content:end;
+        margin-right: 5px;
+        position: relative;
+        top: -45px;
+        margin-right: 10px;
+        gap: 2px;
+    }
+    #headl{
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+    }
+    #headl:hover{
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    .cars{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    #text1{
+        position: absolute;
+       font-size: 150%;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        z-index: 100;
+        top: 22%;
+        left: 30%;
+        text-shadow: -10px 10px 5px grey;
+        -webkit-text-stroke: 1px black;
+        
+    }
+    #text1p{
+        position:absolute ;
+           font-size: 150%;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           top: 60%;
+           left: 65%;
+           z-index: 100;
+
+    }
+    #text2{
+         position: absolute;
+       font-size: 150%;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        z-index: 100;
+        top: 25%;
+        left: 10%;
+         color: aliceblue;
+         -webkit-text-stroke: 1px black;
+    }
+    #text2p{
+         position:absolute ;
+           font-size: 150%;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           top: 65%;
+           -webkit-text-stroke: 0.1px aliceblue;
+           left: 55%;
+           color: beige;
+           z-index: 100;
+    }
+     #text3{
+         position: absolute;
+       font-size: 150%;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        z-index: 100;
+        top: 15%;
+        left: 5%;
+         color: aliceblue;
+         -webkit-text-stroke: 1px white;
+    }
+    #text3p{
+         position:absolute ;
+           font-size: 150%;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           top: 60%;
+           -webkit-text-stroke: 0.1px black;
+           left: 3%;
+           color: beige;
+           z-index: 100;
+    }
+     #text4{
+         position: absolute;
+       font-size: 150%;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        z-index: 100;
+        top: 70%;
+        left: 5%;
+         color: aliceblue;
+         -webkit-text-stroke: 1px white;
+    }
+    #text4p{
+         position:absolute ;
+           font-size: 150%;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           top: 5%;
+           -webkit-text-stroke: 0.1px whitesmoke;
+           left: 40%;
+           color: beige;
+           z-index: 100;
+    }
+    
+    .slider{
+          width: 100vw;
+          height: 580px;
+          margin: auto;
+          overflow: hidden;
+          position: relative;
+    }
+    .slide{
+        position: relative;
+    }
+    .slides{
+        display: flex;
+        animation-name: slide;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+        animation-timing-function:ease-in-out ;
+    }
+    @keyframes slide{
+
+     0%,20%{
+        transform: translateX(0);
+    }
+    25%,45%{
+        transform: translateX(-100%);
+    }
+    50%,70%{
+        transform: translateX(-200%);
+    }
+    75%,95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+
+    }
+    .scon{
+        width:90vw;
+        height: 90vh;
+        background-color: whitesmoke;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+    }
+    
+    #text5{
+       background:linear-gradient(black ,blue,navy);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       font-size: large;
+       position: relative;
+       top: 50px;
+       left: 50px;
+    }
+    #text5p{
+        position: relative;
+        top: 55px;
+        left: 50px;
+    }
+    #x{
+    font-size: 40px;
+    position: relative;
+    left: 45px;
+    top: 80px;
+    text-shadow: 25px 0px 12px black;
+    }
+    #xp{
+        position: relative;
+        left: 45px;
+        top: 80px;
+        font-weight: lighter;
+    }
+    #percent{
+        position: relative;
+        left:50px;
+        font-size:30px ;
+        top: 100px;
+        text-shadow: 25px 0px 10px black;
+    }
+    #percentp{
+        position: relative;
+        left: 50px;
+        top: 100px;
+        font-weight: lighter;
+    }
+    #demo{
+        height: 40px;
+        width: 200px;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+    #demo:hover{
+        background-color: white;
+        color:black ;
+        box-shadow: 0px 10px 10px black;
+        position: relative;
+        top: -3px;
+        transition: 0.8s ease-in-out;
+
+    }
+    #learn{
+        height:40px;
+        width: 200px;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+    }
+    #learn:hover{
+        color: white;
+        background-color: black;
+        box-shadow: 0px 10px 10px black;
+        transition: 0.5s ease-in-out;
+        position: relative;
+        top: -3px;
+        transition: 0.8s ease-in-out;
+
+    }
+    #btn{
+        position: relative;
+        display: flex;
+        gap: 50px;
+        top: 150px;
+        left: 50px;
+    }
+    #frame{
+        position: relative;
+        top: -350px;
+    }
+    .marquee{
+        position: relative;
+        top: 25px;
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0px;
+        background-color: #111111;
+        color: white;
+        border: 3px solid ;
+        margin-top: 25px;
+    }
+    .marqueecontent {
+        display: flex;
+        gap: 150px;
+        letter-spacing: 1px;
+        font-family: " -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+         animation: m1 10s linear infinite;
+    }
+    @keyframes m1 {
+        0%{
+            transform: translateX(-150%);
         }
-    </style>
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    .marqueeO{
+        position: relative;
+        top: 50px;
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0px;
+        background-color: whitesmoke;
+        border: 5px solid ;
+        margin-top: 25px;
+    }
+    .marqueecontentO{
+        display: flex;
+        gap: 200px;
+        letter-spacing: 5px;
+        font-family:-apple-system;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        animation: m1O 10s linear infinite;
+    }
+    @keyframes m1O {
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-150%);
+        }
+    }
+    .f2{
+        width: 900px;
+        height: 300px;
+        background-color: whitesmoke;
+        margin: 60px;
+        border-radius: 10px;
+        padding: 10 px;
+       
+        
+    }
+    .f2:hover{
+        box-shadow: 15px 15px 25px black;
+        transition: 0.5s ease-in-out;
+    }
+    .f2c{
+        display: flex;
+        
+    }
+    .ch{
+        position: relative;
+        top: 50px;
+        left: 50px;
+        
+    }
+    .cp{
+        position: relative;
+        top: 75px;
+        left: 50px;
+        font-weight: lighter;
+    }
+    #lm{
+    position: relative;
+    top: -250px;
+    left: -250px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    }
+    #lm:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }
+    #new{
+    position: relative;
+    top: -115px;
+    left: 8px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    }
+    #new:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }
+    #preo{
+    position: relative;
+    top: -115px;
+    left: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    }
+    #preo:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }
+    #cardimg1{
+        width: 300px;
+        top: -75px;
+        height: 390px;
+        position: relative;
+        left: 250px;
+    }
+    #cardimg2{
+        width: 200px;
+        height: 225px;
+        position: relative;
+        left: 325px;
+        top: -55px;
+        border-radius: 10px;
+    }
+    footer{
+        background-color:black;
+        position: relative;
+        top: 10;
+        height: 25vh;
+        
+    }
+    #fp{
+       color: lightgray;
+       display: flex;
+       justify-content: center;
+       position:relative;
+       top: 25px;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #fl{
+        list-style-type: none;
+        display: flex;
+        gap: 25px;
+        position: relative;
+        justify-content: center;
+        top: 30px;
+    }
+    #fa{
+        text-decoration: none;
+        color: white;
+        display: flex;
+    }
+   </style> 
 </head>
 <body>
-    <h1>VEHICLES</h1>
+    <header>
+        <div class="logoclass">
+            <img src="teslalogo.png" class="logo" alt="logo">
+            <ul class="ulm">
+                <li class="lim"><a href="vehicle-tab.html" ><button id="headb">Vehicles</button></a></li>
+                <li class="lim"><a href="energy-tab.html" ><button id="headb">Energy</button></a></li>
+                <li class="lim"><a href="charging.html" ><button id="headb">Charging</button></a></li>
+                <li class="lim"><a href="discover.html"><button id="headb">Discover</button></a></li>
+                <li class="lim"><a href="shop.html" ><button id="headb">Shop</button></a></li>
+            </ul>
+             <ul class="ull">
+                <li class="lil"><button id="headl"><i class="fa-regular fa-circle-question"></i></button></li>
+                <li class="lil"><button id="headl"><i class="fa-solid fa-globe"></i></button></li>
+                <li class="lil"><button id="headl"><i class="fa-regular fa-circle-user"></i></button></li>
+            </ul>
+           
+        </div>
+
+    </header>
+    <main>
+        <section id="first">
+        <div class="slider">
+            <div class="slides">
+            <div class="slide">
+                <img src="modelY.jpg" class="cars">
+                <div id="text1"><h1>MODEL - Y</h1></div>
+                <div id="text1p"><p>a compact all-electric crossover SUV combining spacious interior, advanced technology, and high performance with<br> up to seven-passenger seating.</p></div>
+            </div>
+            <div class="slide">
+                <img src="roadster.jpg" class="cars">
+                <div id="text2"><h1>ROADSTER</h1></div>
+                <div id="text2p"><p>The Tesla Roadster is an all-electric, high-performance sports car with record-setting acceleration, top speed, and advanced features, designed to surpass traditional gasoline supercars.</p></div>
+            </div>
+            <div class="slide">
+                <img src="1380117.jpg" class="cars">
+                <div id="text3"><h1>CYBERCAB</h1></div>
+                <div id="text3p"><p>The Tesla Cybercab is a two-passenger,<br> fully autonomous electric vehicle designed <br>for ride-hailing as part of <br>Tesla's Robotaxi network.</p></div>
+            </div>
+            <div class="slide">
+                <img src="cybertruck.jpg" class="cars">
+                <div id="text4"><h1>CYBERTRUCK</h1></div>
+                <div id="text4p">The Tesla Cybertruck is a futuristic, all-electric full-size pickup truck <br>with a distinctive angular stainless steel body, advanced technology,<br> and high utility capabilities.</div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <section id="second">
+        <div class="marquee">
+            <div class="marqueecontent">
+                <h2>Model_Y</h2>
+                <h2>Roadster</h2>
+                <h2>Cybercab</h2>
+                <h2>Cybertruck</h2>
+
+                <h2>Model_Y</h2>
+                <h2>Roadster</h2>
+                <h2>Cybercab</h2>
+                <h2>Cybertruck</h2>
+
+                <h2>Model_Y</h2>
+                <h2>Roadster</h2>
+                <h2>Cybercab</h2>
+                <h2>Cybertruck</h2>
+            </div>
+        </div>
+         <div class="marqueeO">
+            <div class="marqueecontentO">
+                <h2>AUTOPILOT</h2>
+                <h2>SELF_DRIVING</h2>
+                <h2>SUPERCHARGING</h2>
+                <h2>AI</h2>
+
+                <h2>AUTOPILOT</h2>
+                <h2>SELF_DRIVING</h2>
+                <h2>SUPERCHARGING</h2>
+                <h2>AI</h2>
+
+                <h2>AUTOPILOT</h2>
+                <h2>SELF_DRIVING</h2>
+                <h2>SUERCHARGING</h2>
+                <h2>AI</h2>
+            </div>
+        </div>
+
+
+        </section>
+        <section id="third">
+            <div class="scon">
+                <div id="text5"><h1>Full Self Driving<br>(Supervised)</h1></div>
+                <div id="text5p"><p>Makes every drive easier. Subscribe for $99/mo.</p></div>
+               <div id="x"><h1>7x</h1></div>
+                <h3 id="xp">Fewer Collisions</h3>
+                <div id="percent"><h1>100%</h1></div>
+                <h3 id="percentp">Accuracy & Precision</h3>
+                <div id="btn">
+                <button id="demo">Schedule Demo</button>
+                <button id="learn">Learn More</button>
+                <video id="frame" width="660px" height="420px" controls autoplay muted loop>
+                   <source src="frame.webm" type="video/webm">
+                </video>
+                </div>
+            </div>
+        </section>
+        <section id="fourth">
+            <div class="f2c">
+            <div class="f2">
+              <h1 class="ch">Current Offers</h1>
+              <h3 class="cp">explore limited time offer on Tesla <br>Vehicle's</h3>
+              <img id="cardimg1" src="teslaofferimg.avif" alt="teslaoffer">
+              <button id="lm">Learn More</button>
+            </div>
+            <div class="f2">
+              <h1 class="ch">Inventory</h1>
+              <h3 class="cp">Find nearby vehicles available for<br>immediate delivery</h3>
+              <img id="cardimg2" src="teslainventimg.avif" alt="teslainvent">
+             <div class="2btn"> <button id="new">New</button>
+              <button id="preo">Pre-Owned</button></div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+          <p id="fp"> Price reflects monthly subscription, subject to terms and conditions. Price and feature availability subject to change.</p>
+          <br>
+          <ul id="fl">
+           <li> <a href="#" id="fa">Tesla © 2026 clone by<br> CURSED INTROVERT</a></li>
+           <li> <a href="#" id="fa">Privacy & Legal</a></li>
+           <li> <a href="#" id="fa">Contact</a></li>
+           <li> <a href="#" id="fa">News</a></li>
+           <li> <a href="#" id="fa">Get Updates</a></li>
+           <li> <a href="#" id="fa">Location</a></li>
+          </ul>
+    </footer>
     
 </body>
 </html>
