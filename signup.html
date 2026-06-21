@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .logo{
+        width: 155px;
+        height: 80px;
+        position: relative;
+        left: 20px;
+        top: -5px;
+        cursor: pointer;
+    }
+    *{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .inpcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -15px;
+
+    }
+    #si{
+        position: relative;
+        left: -110px;
+        top: 30px;
+        font-size: 30px;
+        font-weight:bold;
+        letter-spacing: -1px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+   .incon{
+    display: flex;
+    flex-direction: column;
+   }
+   .inp{
+    position: relative;
+    top: 10px;
+   }
+   #inun{
+    width: 300px;
+    height:  30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    padding: 3px;
+   }
+   #inun2{
+    width: 300px;
+    height:  30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    padding: 3px;
+    position: relative;
+    top: 10px;
+   }
+   #ins{
+    height: 35px;
+    width: 305px;
+    position: relative;
+    top: 175px;
+    background-color:blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+   }
+   #ins:hover{
+    background-color: rgb(83, 83, 252);
+   } 
+
+   #tc{
+    max-width: 320px;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+    position: relative;
+    top: -30px;
+    left: 10px;
+   }
+   footer{
+        background-color:whitesmoke;
+        position: relative;
+        top: 175px;
+        height: 20vh;
+        
+    }
+    #fp{
+       color: lightgray;
+       display: flex;
+       justify-content: center;
+       position:relative;
+       top: 25px;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #fl{
+        list-style-type: none;
+        display: flex;
+        gap: 25px;
+        position: relative;
+        justify-content: center;
+        top: 80px;
+    }
+    #fa{
+        text-decoration: none;
+        color: black;
+        display: flex;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+         <img src="teslalogo.png" class="logo" alt="logo">
+    </header>
+    <main>
+        <div class="inpcon">
+        <h1 id="si">Create Account</h1>
+        <div class="incon">
+            <p class="inp">Firstname</p>
+            <input type="text" id="inun" placeholder="">
+        </div>
+        <div class="incon">
+            <p class="inp">Lastname</p>
+            <input type="text" id="inun" placeholder="">
+        </div>
+        <div class="incon">
+            <p class="inp">Username</p>
+            <input type="text" id="inun" placeholder="">
+        </div>
+        <div class="incon">
+            <p class="inp">Password</p>
+            <input type="password" id="inun" placeholder="">
+             <input type="password" id="inun2" placeholder="Re-Enter Password">
+        </div>
+        <button id="ins">Create Account</button>
+        <p id="tc">By clicking 'Create Account', I understand and agree to Tesla's Privacy Notice(opens in new window) and Terms of Use(opens in new window) for creating a Tesla Account and I authorize Tesla to contact me for account management purposes via the contact information I provide. I understand calls or texts may use automatic or computer-assisted dialing or pre-recorded messages. Normal message and data rates apply.</p>
+    </main>
+    <footer>
+           <ul id="fl">
+           <li> <a href="#" id="fa">News</a></li>
+           <li> <a href="#" id="fa">Get Updates</a></li>
+           <li> <a href="#" id="fa">Location</a></li>
+           </ul>
+     </footer>
+</body>
+</html>

@@ -6,22 +6,14 @@
     <title>Document</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <style>
-         header{
+    html{
+        scroll-behavior: smooth;
+    }
+        
+    header{
         margin:0%;
         height: 70px;
         background-color: white;
-    }
-    #headl{
-        width: 30px;
-        height: 30px;
-        border-radius: 5px;
-        border: none;
-    }
-    #headl:hover{
-        background-color:black;
-        color: black;
-        cursor: pointer;
-        transition: ease-out;
     }
     
     .logo{
@@ -82,12 +74,14 @@
         border: none;
     }
     #headl:hover{
-        background-color: lightgray;
+        background-color: black;
+        color: white;
+        transition: 0.5s ease-out;
         cursor: pointer;
     }
       #mh{
         position: relative;
-        top: 25px;
+        top: 20px;
         font-size: 100px;
         background: linear-gradient(lightgreen,darkgreen);
         -webkit-background-clip: text;
@@ -315,11 +309,11 @@
             top: -700px;
             left: -700px;
         }
-        footer{
+     footer{
         background-color:black;
         position: relative;
         top: 399px;
-        height: 30vh;
+        height: 25vh;
         
     }
     #fp{
@@ -360,7 +354,7 @@
              <ul class="ull">
                 <li class="lil"><button id="headl"><i class="fa-regular fa-circle-question"></i></button></li>
                 <li class="lil"><button id="headl"><i class="fa-solid fa-globe"></i></button></li>
-                <li class="lil"><button id="headl"><i class="fa-regular fa-circle-user"></i></button></li>
+                 <li class="lil"><a href="signin.html"><button id="headl"><i class="fa-regular fa-circle-user"></i></button></a></li>
             </ul>
     </header>
     <main>
